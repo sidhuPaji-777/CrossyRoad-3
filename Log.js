@@ -9,7 +9,7 @@ class Log{
         this.spt.velocityX = speed;
         this.spt.shapeColor = "brown";
         this.spt.scale=0.1;
-        this.spt.debug = true;
+//         this.spt.debug = true;
         var randLog = Math.round(random([1, 2]));
         if(randLog==1)
         {
