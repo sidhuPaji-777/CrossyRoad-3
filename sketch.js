@@ -46,17 +46,26 @@ function setup() {
       }
   
   player = new Player(width/2, height-25);
-}
-
-function draw() {
-  background("skyblue");
-// Spawing Cars
-  if(frameCount%10===0)
+  
+  // Spawing Cars
+  for(var i = 0; i<40;i++)
   {
     cars = new Car(3);
     carGroup1.add(cars.spt);
   }
+  
+}
 
+function draw() {
+  background("skyblue");
+
+  for(i=1;i<carGroup1.length;i++)
+  { 
+    if(carGroup1[i].x<0) 
+    {
+      carGroup1[i].x=width; 
+    } 
+  }
 
   for(i=1;i<logGroup1.length;i++)
   { 
