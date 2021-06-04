@@ -24,7 +24,7 @@ function setup() {
   // Creating Logs
   for(var a = 0; a<40;a++)
   {
-    logs = new Log(-8);
+    logs = new Log(-2);
     logGroup1.add(logs.spt);
   }
 
@@ -84,7 +84,7 @@ function draw() {
 
   if(logGroup1.isTouching(player.spt))
   {
-    player.spt.x = player.spt.x-3;
+    player.spt.x = player.spt.x-2;
     
   }
 
