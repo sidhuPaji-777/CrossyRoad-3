@@ -116,13 +116,13 @@ function playerMovement()
 {
   if(keyDown("up"))
   {
-    player.move(0, -1);
+    player.move(0, -1.8);
     // player.velocityY = 2;
   }
 
   else if(keyDown("down"))
   {
-    player.move(0, 1);
+    player.move(0, 1.8);
   }
 
   else if(keyDown("right"))
